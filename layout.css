@@ -1,5 +1,37 @@
 @charset "UTF-8";
 
 html {
- 
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background-color: rgb(43, 86, 155);
+  padding-top: 2%;
+}
+
+header {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav#navbar > a {
+  text-align: center;
+  text-decoration: none;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  font-size: 1.5em;
+  color: rgb(132, 25, 25);
+
+}
+
+body {
+  height: 100%;
+  background-color: rgb(224, 223, 141);
+  width: 50%;
+  min-width: 640px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-radius: 10px;
 }
