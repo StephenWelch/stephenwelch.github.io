@@ -13,14 +13,26 @@ header {
   font-size: 2.5em;
 }
 
+/* Navbar */
+nav#navbar {
+  padding: 0.5%;
+}
+
+/* Navbar Links */
 nav#navbar > a {
   text-align: center;
   text-decoration: none;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
+  padding-left: 0.0%;
+  padding-right: 0.75%;
   font-size: 1.5em;
   color: rgb(132, 25, 25);
 
+  transition-property: font-size; /* Only animate font size */
+  transition-duration: 0.5s;
+}
+
+nav#navbar > a:hover {
+  font-size: 1.65em;
 }
 
 body {
