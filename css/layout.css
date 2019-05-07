@@ -39,13 +39,13 @@ body > p {
 }
 
 /* Navbar */
-nav#navbar {
+nav#top-navbar {
     text-align: center;
     padding-bottom: 2.5%;
 }
 
 /* Navbar Links */
-nav#navbar > a {
+nav#top-navbar > a {
     text-align: center;
     text-decoration: none;
     padding-left: 0.0%;
@@ -57,6 +57,6 @@ nav#navbar > a {
     transition-duration: 0.5s;
 }
 
-nav#navbar > a:hover {
+nav#top-navbar > a:hover {
     font-size: 1.65em;
 }
