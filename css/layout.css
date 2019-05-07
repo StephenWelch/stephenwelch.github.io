@@ -13,13 +13,20 @@ header {
     font-size: 2.5em;
 }
 
+header > h1 {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 body {
-    height: 300%;
+    min-height: 150%; /* Minimum height: browser window height * 1.5 */
+    display: block; /* Forces body to stretch to fit content */
     background-color: rgb(248, 248, 248);
     width: 80%;
     min-width: 640px;
     max-width: 860px;
-    min-height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 8%;
@@ -33,11 +40,12 @@ body > p {
 
 /* Navbar */
 nav#navbar {
+    text-align: center;
+    padding-bottom: 2.5%;
 }
 
 /* Navbar Links */
 nav#navbar > a {
-    position: static;
     text-align: center;
     text-decoration: none;
     padding-left: 0.0%;
