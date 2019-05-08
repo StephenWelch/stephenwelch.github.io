@@ -44,12 +44,22 @@ nav#top-navbar {
     padding-bottom: 2.5%;
 }
 
-/* Navbar Links */
-nav#top-navbar > a {
-    text-align: center;
-    text-decoration: none;
+nav#top-navbar ul {
+    position: relative;
+    list-style: none;
+}
+
+nav#top-navbar ul li {
+    display: inline-block; /* Display list elements horizontally */
     padding-left: 0.0%;
     padding-right: 2.5%;
+}
+
+/* Navbar Links */
+nav#top-navbar ul li a {
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
     font-size: 1.5em;
     color: rgb(132, 25, 25);
 
@@ -57,6 +67,6 @@ nav#top-navbar > a {
     transition-duration: 0.5s;
 }
 
-nav#top-navbar > a:hover {
+nav#top-navbar ul li:hover a {
     font-size: 1.65em;
 }
