@@ -7,7 +7,7 @@
     let nav = $("#top-navbar ul")
     $(window).on("scroll",
         (event) => {
-            console.log($(window).scrollTop() + " " + getPosition(nav).y)
+            console.log($(window).scrollTop() + " " + $(nav).scrollTop())
         }
     )
 });
