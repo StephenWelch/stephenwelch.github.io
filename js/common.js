@@ -25,8 +25,8 @@ Util.isOutOfViewport = function (elem) {
 };
 
 Util.getPosition = function (element) {
-    var xPosition = 0;
-    var yPosition = 0;
+    let xPosition = 0;
+    let yPosition = 0;
 
     while(element) {
         xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
@@ -35,12 +35,19 @@ Util.getPosition = function (element) {
     }
 
     return { x: xPosition, y: yPosition };
-}
+};
 
 Util.getPageName = function (window) {
     let page_name = window.location.pathname.split("/").pop().split(".")[0];
     if(page_name === "") page_name = "index";
     return page_name;
+};
+
+Util.getRandomColor = function() {
+    // Math.pow is slow, use constant instead.
+    let color = Math.floor(Math.random() * 16777216).toString(16);
+    // Avoid loops.
+    return '#000000'.slice(0, -color.length) + color;
 }
 
 function Global(){}

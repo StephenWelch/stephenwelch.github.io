@@ -2,14 +2,6 @@
     --grid-square-size: 200px;
 }
 
-@keyframes  random {
-    15% { background-color: red; }
-    30% { background-color: yellow; }
-    45% { background-color: green; }
-    60% { background-color: blue; }
-    75% { background-color: white; }
-}
-
 .grid {
     margin: 0 auto;
 }
@@ -24,9 +16,7 @@
     text-align: center;
     font-size: 1.65em;
     font-weight: bold;
-
-    transition: all 0.3s ease-out;
-    animation: random 5s infinite;
+    color: black;
 }
 
 /* Sizing */

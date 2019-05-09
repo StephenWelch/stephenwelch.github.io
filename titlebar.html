@@ -39,7 +39,11 @@
         // grid.imagesLoaded().progress(grid.isotope("layout"))
     });
 
-
+    $("div.grid-item").each((index, item) => {
+        if($(item).css("background-image") === "none") {
+            $(item).css("background-color", Util.getRandomColor())
+        }
+    })
 
 </script>
 
