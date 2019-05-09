@@ -38,5 +38,7 @@ Util.getPosition = function (element) {
 }
 
 Util.getPageName = function (window) {
-    return window.location.pathname.split("/").pop().split(".")[0];
+    let page_name = window.location.pathname.split("/").pop().split(".")[0];
+    if(page_name === "") page_name = "index";
+    return page_name;
 }
