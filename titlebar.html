@@ -1,19 +1,24 @@
-<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="node_modules/loglevel/dist/loglevel.js"></script>
 
 <script>
+
+    log.setLevel(log.levels.DEBUG);
+    log.warn("Site Version: " + Global.SITE_VERSION);
+
     $(function () {
-        console.log("Init scroll listener!")
+        log.debug("Init scroll listener!")
         let nav = $("#top_navbar ul")
         $(window).on("scroll",
             (event) => {
-                console.log($(window).scrollTop() + " " + $(nav).scrollTop)
+                log.debug($(window).scrollTop() + " " + $(nav).scrollTop)
             }
         )
     });
 
     $(function() {
         let link_string = "#" + Util.getPageName(window) + "_navbutton";
-        console.log("Target link: " + link_string);
+        log.debug("Target link: " + link_string);
         let link = $(link_string);
         link.css("font-size", "1.65em")
         link.css("font-weight", "bold")

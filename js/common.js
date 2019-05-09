@@ -42,3 +42,7 @@ Util.getPageName = function (window) {
     if(page_name === "") page_name = "index";
     return page_name;
 }
+
+function Global(){}
+
+Global.SITE_VERSION = "1.0.0";

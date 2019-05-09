@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.4.1",
-    "jquery-visible": "^1.2.0"
+    "jquery-visible": "^1.2.0",
+    "loglevel": "^1.6.1"
   },
   "devDependencies": {},
   "scripts": {
