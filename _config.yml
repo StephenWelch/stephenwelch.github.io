@@ -1,1 +1,2 @@
+# Should prevent Jekyll (what Github Pages uses to serve webpages) from ignoring the node_modules folder that we store dependencies in
 exclude: []
