@@ -48,19 +48,19 @@ nav#top_navbar {
     padding-bottom: 2.5%;
 }
 
-nav#top_navbar ul {
+nav#top_navbar > ul {
     position: relative;
     list-style: none;
 }
 
-nav#top_navbar ul li {
+nav#top_navbar > ul > li {
     display: inline-block; /* Display list elements horizontally */
     padding-left: 0.0%;
     padding-right: 2.5%;
 }
 
 /* Navbar Links */
-nav#top_navbar ul li a {
+nav#top_navbar > ul > li > a {
     white-space: nowrap;
     text-align: center;
     text-decoration: none;
