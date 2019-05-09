@@ -1,5 +1,8 @@
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="node_modules/loglevel/dist/loglevel.js"></script>
+<script type="text/javascript" src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
+<script type="text/javascript" src="node_modules/imagesloaded/imagesloaded.js"></script>
+<script type="text/javascript" src="node_modules/loglevel/dist/loglevel.js"></script>
 
 <script>
 
@@ -23,6 +26,20 @@
         link.css("font-size", "1.65em")
         link.css("font-weight", "bold")
     });
+
+    $(function() {
+        let grid = $(".grid")
+        grid.isotope({
+            itemSelector: ".grid-item",
+            layoutMode: "masonry",
+            masonry: {
+
+            }
+        });
+        // grid.imagesLoaded().progress(grid.isotope("layout"))
+    });
+
+
 
 </script>
 

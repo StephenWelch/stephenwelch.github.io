@@ -4,9 +4,12 @@
   "description": "I use it to teach myself a bit of HTML and CSS, as well as provide some information about myself.",
   "main": "index.js",
   "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
     "jquery-visible": "^1.2.0",
-    "loglevel": "^1.6.1"
+    "loglevel": "^1.6.1",
+    "masonry-layout": "^4.2.2"
   },
   "devDependencies": {},
   "scripts": {
