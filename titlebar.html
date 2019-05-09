@@ -1,28 +1,35 @@
 <script type="text/javascript" src="js/util.js"></script>
 
-
 <script>
     $(function () {
-    console.log("Init listener!")
-    let nav = $("#top-navbar ul")
-    $(window).on("scroll",
-        (event) => {
-            console.log($(window).scrollTop() + " " + $(nav).)
-        }
-    )
-});
+        console.log("Init scroll listener!")
+        let nav = $("#top_navbar ul")
+        $(window).on("scroll",
+            (event) => {
+                console.log($(window).scrollTop() + " " + $(nav).scrollTop)
+            }
+        )
+    });
+
+    $(function() {
+        let link_string = "#" + Util.getPageName(window) + "_navbutton";
+        console.log("Target link: " + link_string);
+        let link = $(link_string);
+        link.css("font-size", "1.65em")
+        link.css("font-weight", "bold")
+    });
+
 </script>
 
 <header>
     <h1> Stephen Welch </h1>
 </header>
 
-<nav id="top-navbar">
+<nav id="top_navbar">
     <ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="about_me.html"> About Me </a></li>
-        <li><a href="resume.html"> Resume </a></li>
-        <li><a href="projects.html"> Projects </a></li>
-        <li><a href="contact_me.html"> Contact Me </a></li>
+        <li><a id="index_navbutton" href="index.html"> Home </a></li>
+        <li><a id="resume_navbutton" href="resume.html"> Resume </a></li>
+        <li><a id="projects_navbutton" href="projects.html"> Projects </a></li>
+        <li><a id="contact_me_navbutton" href="contact_me.html"> Contact Me </a></li>
     </ul>
 </nav>

@@ -1,10 +1,12 @@
+function Util() {}
+
 /*!
  * Check if an element is out of the viewport
  * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
  * @param  {Node}  elem The element to check
  * @return {Object}     A set of booleans for each side of the element
  */
-function isOutOfViewport(elem) {
+Util.isOutOfViewport = function (elem) {
 
     // Get element's bounding
     let bounding = elem.getBoundingClientRect();
@@ -22,7 +24,7 @@ function isOutOfViewport(elem) {
 
 };
 
-function getPosition(element) {
+Util.getPosition = function (element) {
     var xPosition = 0;
     var yPosition = 0;
 
@@ -33,4 +35,8 @@ function getPosition(element) {
     }
 
     return { x: xPosition, y: yPosition };
+}
+
+Util.getPageName = function (window) {
+    return window.location.pathname.split("/").pop().split(".")[0];
 }

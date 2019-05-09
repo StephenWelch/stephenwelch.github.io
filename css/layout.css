@@ -43,24 +43,24 @@ body > p {
 }
 
 /* Navbar */
-nav#top-navbar {
+nav#top_navbar {
     text-align: center;
     padding-bottom: 2.5%;
 }
 
-nav#top-navbar ul {
+nav#top_navbar ul {
     position: relative;
     list-style: none;
 }
 
-nav#top-navbar ul li {
+nav#top_navbar ul li {
     display: inline-block; /* Display list elements horizontally */
     padding-left: 0.0%;
     padding-right: 2.5%;
 }
 
 /* Navbar Links */
-nav#top-navbar ul li a {
+nav#top_navbar ul li a {
     white-space: nowrap;
     text-align: center;
     text-decoration: none;
@@ -71,6 +71,6 @@ nav#top-navbar ul li a {
     transition-duration: 0.5s;
 }
 
-nav#top-navbar ul li:hover a {
+nav#top_navbar ul li:hover a {
     font-size: 1.65em;
 }
