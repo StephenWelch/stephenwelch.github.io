@@ -1,22 +1,37 @@
 :root {
     --grid-square-size: 200px;
+    --grid-square-size-two: calc(var(--grid-square-size) * 2);
+    --grid-square-size-multiplier: 1.05;
 }
 
 .grid {
-    margin: 0 auto;
+    padding: auto;
+    text-align: center;
 }
 
 .grid-item {
-    align-content: center;
-    background-color: red;
+    /*background-color: red;*/
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
 
-    margin: 1.25%;
-
+    margin: 0.3em;
+    align-content: center;
     text-align: center;
+
     font-size: 1.65em;
     font-weight: bold;
     color: black;
+
+    transition-duration: 0.5s;
+}
+
+.grid-item p {
+
+}
+
+.grid-item:hover {
+    transform: scale(var(--grid-square-size-multiplier));
 }
 
 /* Sizing */
@@ -26,11 +41,11 @@
 }
 
 .grid-item.one.two {
-    width: calc(var(--grid-square-size) * 2);
+    width: var(--grid-square-size-two);
     height: var(--grid-square-size);
 }
 
-.grid-item.one.four{
+.grid-item.one.four {
     width: var(--grid-square-size);
     height: calc(var(--grid-square-size) * 2);
 }

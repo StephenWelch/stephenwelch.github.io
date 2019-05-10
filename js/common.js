@@ -43,13 +43,39 @@ Util.getPageName = function (window) {
     return page_name;
 };
 
+Util.getRandomInt = function(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
 Util.getRandomColor = function() {
     // Math.pow is slow, use constant instead.
     let color = Math.floor(Math.random() * 16777216).toString(16);
     // Avoid loops.
     return '#000000'.slice(0, -color.length) + color;
-}
+};
+
+Util.getRandomPaletteColor = function() {
+    return Global.COLOR_PALETTE[Util.getRandomInt(Global.COLOR_PALETTE.length - 5)]
+};
 
 function Global(){}
 
 Global.SITE_VERSION = "1.0.0";
+Global.COLOR_PALETTE = [
+    "#0074D9",
+    "#7FDBFF",
+    "#39CCCC",
+    "#3D9970",
+    "#2ECC40",
+    "#01FF70",
+    "#FFDC00",
+    "#FF851B",
+    "#FF4136",
+    "#85144b",
+    "#F012BE",
+    "#B10DC9",
+    "#AAAAAA",
+    "#DDDDDD",
+    "#001F3F",
+    "#111111",
+    "#FFFFFF"];

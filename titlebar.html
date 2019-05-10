@@ -27,23 +27,23 @@
         link.css("font-weight", "bold")
     });
 
+    $("div.grid-item").each((index, item) => {
+        if($(item).css("background-image") === "none") {
+            $(item).css("background-color", Util.getRandomPaletteColor())
+        }
+    });
+
     $(function() {
         let grid = $(".grid")
         grid.isotope({
             itemSelector: ".grid-item",
             layoutMode: "masonry",
             masonry: {
-
+                
             }
         });
-        // grid.imagesLoaded().progress(grid.isotope("layout"))
+        grid.imagesLoaded().progress(grid.isotope("layout"))
     });
-
-    $("div.grid-item").each((index, item) => {
-        if($(item).css("background-image") === "none") {
-            $(item).css("background-color", Util.getRandomColor())
-        }
-    })
 
 </script>
 
