@@ -39,10 +39,15 @@
             itemSelector: ".grid-item",
             layoutMode: "masonry",
             masonry: {
-                
+                initLayout: false
             }
         });
-        grid.imagesLoaded().progress(grid.isotope("layout"))
+    });
+
+    $(document).ready().on(() => {
+        let grid = $(".grid");
+        grid.imagesLoaded().progress(grid.isotope("layout")) // Reload layout
+        grid.isotope("reloadItems")
     });
 
 </script>

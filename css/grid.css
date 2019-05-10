@@ -26,10 +26,6 @@
     transition-duration: 0.5s;
 }
 
-.grid-item p {
-
-}
-
 .grid-item:hover {
     transform: scale(var(--grid-square-size-multiplier));
 }
