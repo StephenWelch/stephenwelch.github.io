@@ -42,6 +42,12 @@ body > p {
 
 }
 
+iframe#resume_embed {
+    width: 100%;
+    min-height: 1000px;
+    height: auto;
+}
+
 /* Navbar */
 nav#top_navbar {
     text-align: center;
