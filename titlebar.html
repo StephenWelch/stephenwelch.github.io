@@ -33,18 +33,34 @@
         }
     });
 
-    $(function() {
-        let grid = $(".grid")
-        grid.isotope({
-            itemSelector: ".grid-item",
-            layoutMode: "masonry",
-            masonry: {
-                // initLayout: false
-            }
-        });
+    let $grid = $(".grid");
+
+    $grid.isotope({
+        itemSelector: ".grid-item",
+        layoutMode: "masonry",
+        // masonry: {
+        //     initLayout: false,
+        //     gutter: 20,
+        //     fitWidth: true,
+        //     horizontalOrder: true,
+        //     columnWidth: 200
+        // }
+        masonry: {
+            gutter: 20
+        }
     });
-    let grid = $(".grid");
-    grid.imagesLoaded().imagesLoaded(grid.isotope("layout")) // Reload layout
+
+    $grid.imagesLoaded().imagesLoaded( function() {
+        log.warn("Images loaded")
+        $grid.isotope('reloadItems')
+        $grid.isotope('layout');
+    });
+
+    $("document").ready(function() {
+        log.warn("Document ready")
+        $grid.isotope('reloadItems')
+        $grid.isotope('layout');
+    })
 
 </script>
 

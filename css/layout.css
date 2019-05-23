@@ -25,10 +25,9 @@ header > h1 {
 }
 
 body {
-    min-height: 150%; /* Minimum height: browser window height * 1.5 */
+    min-height: 300%; /* Minimum height: browser window height * 1.5 */
     display: block; /* Forces body to stretch to fit content */
     background-color: rgb(248, 248, 248);
-    width: 80%;
     min-width: 320px;
     max-width: 60%;
     margin-left: auto;
@@ -36,6 +35,7 @@ body {
     padding-left: 8%;
     padding-right: 8%;
     border-radius: 10px;
+    position: relative;
 }
 
 body > p {
@@ -79,4 +79,9 @@ nav#top_navbar > ul > li > a {
 
 nav#top_navbar ul li:hover a {
     font-size: 1.65em;
+}
+
+#bottombar {
+    position: fixed;
+    bottom: 0;
 }
