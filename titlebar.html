@@ -43,12 +43,8 @@
             }
         });
     });
-
-    $(document).ready().on(() => {
-        let grid = $(".grid");
-        // grid.imagesLoaded().progress(grid.isotope("layout")) // Reload layout
-        // grid.isotope("reloadItems")
-    });
+    let grid = $(".grid");
+    grid.imagesLoaded().imagesLoaded(grid.isotope("layout")) // Reload layout
 
 </script>
 

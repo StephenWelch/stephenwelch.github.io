@@ -15,15 +15,17 @@
     background-position: center;
     border-radius: 10px;
 
-    margin: 0.3em;
     align-content: center;
     text-align: center;
 
     font-size: 1.65em;
     font-weight: bold;
     color: black;
-
     transition-duration: 0.5s;
+}
+
+a {
+    margin: 50px;
 }
 
 .grid-item:hover {
