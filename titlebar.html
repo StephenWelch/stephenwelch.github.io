@@ -1,5 +1,4 @@
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="node_modules/loglevel/dist/loglevel.js"></script>
 <script type="text/javascript" src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
 <script type="text/javascript" src="node_modules/imagesloaded/imagesloaded.js"></script>
 <script type="text/javascript" src="node_modules/loglevel/dist/loglevel.js"></script>
@@ -27,17 +26,12 @@
         link.css("font-weight", "bold")
     });
 
-    $("div.grid-item").each((index, item) => {
-        if($(item).css("background-image") === "none") {
-            $(item).css("background-color", Util.getRandomPaletteColor())
-        }
-    });
-
     let $grid = $(".grid");
 
     $grid.isotope({
         itemSelector: ".grid-item",
         layoutMode: "masonry",
+        initLayout: false,
         // masonry: {
         //     initLayout: false,
         //     gutter: 20,
@@ -50,17 +44,26 @@
         }
     });
 
-    $grid.imagesLoaded().imagesLoaded( function() {
-        log.warn("Images loaded")
-        $grid.isotope('reloadItems')
-        $grid.isotope('layout');
+
+
+    $("div.grid-item").each((index, item) => {
+        if($(item).css("background-image") === "none") {
+            $(item).css("background-color", Util.getRandomPaletteColor())
+        }
     });
 
+    // $grid.imagesLoaded().imagesLoaded( function() {
+    //     log.warn("Images loaded. Reloading items and layout.")
+    //     $grid.isotope('reloadItems')
+    //     $grid.isotope('layout');
+    // });
+
     $("document").ready(function() {
-        log.warn("Document ready")
-        $grid.isotope('reloadItems')
+        log.warn("Document ready. Reloading items and layout.")
+        $grid.isotope();
+        $grid.isotope('reloadItems');
         $grid.isotope('layout');
-    })
+    });
 
 </script>
 

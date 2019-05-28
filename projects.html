@@ -7,16 +7,16 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script>$(function () {
-        $("head").load("head.html")
-    });</script>
+
+    <script>$(function () {$("head").load("head.html")});</script>
+
 </head>
 
 <div id="titlebar"></div>
 
 <body>
     <div class="grid">
-        <a href="https://github.com/iliterobotics/FRC-Arduino-2017" style="margin: 50px">
+        <a href="https://github.com/iliterobotics/FRC-Arduino-2017">
             <div class="grid-item one">
                 <p>ILITE Robotics 2017 LED Signaling Code</p>
             </div>
@@ -64,15 +64,17 @@
     </div>
 </body>
 
+<script type="text/javascript" src="js/grid.js"></script>
+
 <div id="bottombar"></div>
 
 <script>
     $(function () {
         $("#titlebar").load("titlebar.html")
-    })
+    });
     $(function () {
         $("#bottombar").load("bottombar.html")
-    })
+    });
 </script>
 
 </html>
