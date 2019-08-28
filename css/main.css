@@ -1,0 +1,56 @@
+:root {
+    --foreground-color: black;
+    --background-color: white;
+}
+
+@import url('https://rsms.me/inter/inter.css');
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+html * {
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
+
+@supports (font-variation-settings: normal) {
+    html { 
+        font-family: 'Inter var', sans-serif; 
+    }
+}
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header#titlebar {
+    width: 100%;
+    text-align: center;
+}
+
+header#titlebar h1 {
+    font-size: 4.5em;
+    display: inline-block;
+    padding-right: 1%;
+}
+
+header#titlebar nav {
+    display: inline-block;
+}
+
+header#titlebar nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    transition-property: font-size; /* Only animate font size */
+    transition-duration: 0.5s;
+}
+
+header#titlebar nav a:hover {
+    font-size: 1.4em;
+}
+
+header#titlebar nav a:active {
+    font-size: 1.4em;
+}
