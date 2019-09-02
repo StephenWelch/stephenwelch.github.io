@@ -60,10 +60,14 @@ header#titlebar nav a:active {
     font-size: 1.4em;
 }
 
-button {
+footer {
+    margin-top: 5%;
+}
+
+* button {
     display: contents;
 }
 
-button:hover {
+* button:hover {
     text-decoration: underline;
 }
