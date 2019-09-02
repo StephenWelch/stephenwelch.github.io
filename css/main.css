@@ -20,13 +20,16 @@ html * {
 }
 
 body {
-    width: 80%;
+    /* width: 50%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+}
+
+body > p {
+    font-size: 1.2em;
 }
 
 header#titlebar {
-    width: 100%;
     text-align: center;
 }
 
@@ -53,4 +56,12 @@ header#titlebar nav a:hover {
 
 header#titlebar nav a:active {
     font-size: 1.4em;
+}
+
+button {
+    display: contents;
+}
+
+button:hover {
+    text-decoration: underline;
 }

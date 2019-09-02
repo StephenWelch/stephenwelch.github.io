@@ -17,7 +17,7 @@ let themes = [blackOnWhite, whiteOnBlack, blackOnSepia];
 
 let themeIndex = 0;
 
-function toggleColor() {
+function toggleTheme() {
     themeIndex++;
     if(themeIndex >= themes.length) {
         themeIndex = 0;

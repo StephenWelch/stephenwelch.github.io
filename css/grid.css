@@ -1,0 +1,70 @@
+:root {
+    --grid-square-size: 200px;
+    --grid-square-size-two: calc(var(--grid-square-size) * 2);
+    --grid-square-size-multiplier: 1.05;
+}
+
+.grid {
+    max-width: 1200px;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    /* Spacing */
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+    /* Grid box styling */
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    /* Content styling */
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.grid-item h1 {
+    font-size: 1.65em;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+/* clear fix */
+.grid:after {
+    
+}
+
+.grid-item:hover {
+    transform: scale(var(--grid-square-size-multiplier));
+}
+
+/* Sizing */
+.grid-item.one {
+    width: var(--grid-square-size);
+    height: var(--grid-square-size);
+}
+
+.grid-item.one.two {
+    width: var(--grid-square-size-two);
+    height: var(--grid-square-size);
+}
+
+.grid-item.one.four {
+    width: var(--grid-square-size);
+    height: calc(var(--grid-square-size) * 2);
+}
+
+.grid-item.one.two.three.four {
+    width: calc(var(--grid-square-size) * 2);
+    height: calc(var(--grid-square-size) * 2);
+}

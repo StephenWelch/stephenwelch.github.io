@@ -7,41 +7,112 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script>$(function () {
+    <script>
         $("head").load("head.html")
-    });</script>
+    </script>
+
+    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+
+
+    <script>
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            gutter: 10,
+        });
+    </script>
+
 </head>
 
 <div id="header"></div>
 <script>$("#header").load("header.html")</script>
 
-<h1>Orbital</h1>
-An in-development clone of Bussard.
-<h1>1-Dimensional Motion Profile Generator</h1>
-Generates and animates 1-dimensional motion profiles using JavaScript
-with changeable parameters such as start/end position and velocity, max acceleration, and more.
-<h1>Grade Scraper</h1>
-Retrieves my high school grades from a web portal using Selenium and logs them to a CSV file. Written in Python.
-<h1>ILITE Robotics 2019 Robot Code</h1>
-The codebase for ILITE's 2019 robot. I lead development of this project as the Software Team Lead.
-<h1>Bang-Bang</h1>
-A library I developed that employs existing code and techniques to control robots with differential steering in simulation and in real life.
-<h1>State-Space Controller Demo in Java</h1>
-A state-space controller I developed following <a href='https://blog.wesleyac.com/posts/intro-to-control-part-zero-whats-this'>this</a> series
-of blog posts. Features real-time graphing using JavaFX.
-<h1>ILITE Robotics 2018 Robot Code</h1>
-The codebase for ILITE's 2018 robot. I lead development of this project as the Software Team Lead.
-<h1>Atari 2600 Emulator Conversion</h1>
-An Atari 2600 running RetroPIE, with fully functional switches and controller ports.
-<h1>Sequential Autonomous Generator</h1>
-An easy-to-use autonomous routine code generator for robots.
-<h1>ILITE Robotics 2017 LED Signaling Code</h1>
-An Arduino-based system utilizing Neopixels and I2C to signal robot state in real time.
-<h1>Intercom to Media Player Conversion</h1>
-An old intercom, converted to an MP3 player with working controls.
+<div class="grid">
+    <div class="grid-sizer"></div>
+
+    <a href="">
+        <div class="grid-item one">
+                <h1>Orbital</h1>
+                <!-- An in-development clone of Bussard. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>1-Dimensional Motion Profile Generator</h1>
+            <!-- Generates and animates 1-dimensional motion profiles using JavaScript
+            with changeable parameters such as start/end position and velocity, max acceleration, and more. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>Grade Scraper</h1>
+            <!-- Retrieves my high school grades from a web portal using Selenium and logs them to a CSV file. Written in Python.     -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one two">
+            <h1>ILITE Robotics 2019 Robot Code</h1>
+            <!-- The codebase for ILITE's 2019 robot. I lead development of this project as the Software Team Lead. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>Bang-Bang</h1>
+            <!-- A library I developed that employs existing code and techniques to control robots with differential steering in simulation and in real life. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one two">
+            <h1>State-Space Controller Demo in Java</h1>
+            <!-- A state-space controller I developed following <a href='https://blog.wesleyac.com/posts/intro-to-control-part-zero-whats-this'>this</a> series
+            of blog posts. Features real-time graphing using JavaFX. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one two">
+            <h1>ILITE Robotics 2018 Robot Code</h1>
+            <!-- The codebase for ILITE's 2018 robot. I lead development of this project as the Software Team Lead. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>Atari 2600 Emulator Conversion</h1>
+            <!-- An Atari 2600 running RetroPIE, with fully functional switches and controller ports. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>Sequential Autonomous Generator</h1>
+            <!-- An easy-to-use autonomous routine code generator for robots. -->
+        </div>
+    </a>
+
+    <a href="">
+        <div class="grid-item one">
+            <h1>ILITE Robotics 2017 LED Signaling Code</h1>
+            <!-- An Arduino-based system utilizing Neopixels and I2C to signal robot state in real time. -->
+        </div>
+    </a>
+
+    <a href=""></a>
+        <div class="grid-item one">
+            <h1>Intercom to Media Player Conversion</h1>
+            <!-- An old intercom, converted to an MP3 player with working controls. -->
+        </div>
+    </a>
+
+</div>
 
 <div id="footer"></div>
 <script>$("#footer").load("footer.html")</script>
-
 
 </html>
