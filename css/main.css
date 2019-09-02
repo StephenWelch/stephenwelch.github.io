@@ -20,9 +20,10 @@ html * {
 }
 
 body {
-    /* width: 50%;
-    margin-left: auto;
-    margin-right: auto; */
+    max-width: 70%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
 }
 
 body > p {
@@ -31,6 +32,7 @@ body > p {
 
 header#titlebar {
     text-align: center;
+    margin-bottom: 5%;
 }
 
 header#titlebar h1 {
