@@ -58,18 +58,20 @@
     transition-duration: 0.5s;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 20%;
-}
-
 .grid-item h1 {
     font-size: 1.65em;
+}
+
+.grid-item a {
+    /* Override default link styling, underlining is glitchy for some reason*/
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .grid-item div.front {
     width: 90%;
     height: 90%;
+    margin: auto;
 }
 
 .grid-item div.back {
@@ -77,6 +79,7 @@
     display: none;
     width: 90%;
     height: 90%;
+    margin: auto;
 }
 
 .grid-item:hover {
