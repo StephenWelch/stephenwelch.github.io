@@ -6,25 +6,11 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script>
-        $("head").load("head.html")
-    </script>
-
-    <script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
-
-    <script>
-        $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true,
-            gutter: 10,
-        });
-    </script>
-
+    <script>$("head").load("/head.html")</script>
 </head>
 
 <div id="header"></div>
-<script>$("#header").load("header.html")</script>
+<script>$("#header").load("/header.html")</script>
 
 <div class="grid">
     <div class="grid-sizer"></div>
@@ -34,7 +20,7 @@
             <div class="front">
                 <h1>Orbital</h1>
             </div>
-            <div class="back"> An in-development clone of Bussard. </div>
+            <div class="back"> A 2D space simulator with planets, gravity, and pretty graphics. </div>
         </div>
     </a>
 
@@ -59,95 +45,81 @@
                 with changeable parameters such as start/end position and velocity, max acceleration, and more.
             </div>
         </div>
-</div>
-</a>
+    </a>
 
-<a href="">
-        <div class="grid-item one two">
-            <div class="front">
-                <h1>ILITE Robotics 2018 Robot Code</h1>
+    <a href="">
+            <div class="grid-item one two">
+                <div class="front">
+                    <h1>ILITE Robotics 2018 Robot Code</h1>
+                </div>
+                <div class="back"> The codebase for ILITE's 2018 robot. I led development of this project as the Software Team
+                    Lead. </div>
             </div>
-            <div class="back"> The codebase for ILITE's 2018 robot. I led development of this project as the Software Team
-                Lead. </div>
-        </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one">
-        <div class="front">
-            <h1>Grade Scraper</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>Grade Scraper</h1>
+            </div>
+            <div class="back">
+                Retrieves my high school grades from a web portal using Selenium and logs them to a CSV file. Written in
+                Python.
+            </div>
         </div>
-        <div class="back">
-            Retrieves my high school grades from a web portal using Selenium and logs them to a CSV file. Written in
-            Python.
-        </div>
-    </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one">
-        <div class="front">
-            <h1>Bang-Bang</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>Bang-Bang</h1>
+            </div>
+            <div class="back">
+                A library I developed that employs existing code and techniques to control robots with differential steering
+                in simulation and in real life.
+            </div>
         </div>
-        <div class="back">
-            A library I developed that employs existing code and techniques to control robots with differential steering
-            in simulation and in real life.
-        </div>
-    </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one two">
-        <div class="front">
-            <h1>State-Space Controller Demo in Java</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>Atari 2600 Emulator Conversion</h1>
+            </div>
+            <div class="back"> An Atari 2600 running RetroPIE, with fully functional switches and controller ports. </div>
         </div>
-        <div class="back">
-            A state-space controller I developed following <a href='https://blog.wesleyac.com/posts/intro-to-control-part-zero-whats-this'>this</a>
-            series of blog posts. Features real-time graphing using JavaFX.
-        </div>
-    </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one">
-        <div class="front">
-            <h1>Atari 2600 Emulator Conversion</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>Sequential Autonomous Generator</h1>
+            </div>
+            <div class="back"> An easy-to-use autonomous routine code generator for robots. </div>
         </div>
-        <div class="back"> An Atari 2600 running RetroPIE, with fully functional switches and controller ports. </div>
-    </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one">
-        <div class="front">
-            <h1>Sequential Autonomous Generator</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>ILITE Robotics 2017 Driver Signaling</h1>
+            </div>
+            <div class="back"> An Arduino-based system utilizing Neopixels and I2C to signal robot state to the driver in real time.</div>
         </div>
-        <div class="back"> An easy-to-use autonomous routine code generator for robots. </div>
-    </div>
-</a>
+    </a>
 
-<a href="">
-    <div class="grid-item one">
-        <div class="front">
-            <h1>ILITE Robotics 2017 LED Signaling Code</h1>
+    <a href="">
+        <div class="grid-item one">
+            <div class="front">
+                <h1>Intercom to Media Player Conversion</h1>
+            </div>
+            <div class="back"> An old intercom, converted to an MP3 player with working controls. </div>
         </div>
-        <div class="back"> An Arduino-based system utilizing Neopixels and I2C to signal robot state in real time.
-        </div>
-    </div>
-</a>
-
-<a href=""></a>
-<div class="grid-item one">
-    <div class="front">
-        <h1>Intercom to Media Player Conversion</h1>
-    </div>
-    <div class="back"> An old intercom, converted to an MP3 player with working controls. </div>
-</div>
-</a>
+    </a>
 
 </div>
 
 <div id="footer"></div>
-<script>$("#footer").load("footer.html")</script>
+<script>$("#footer").load("/footer.html")</script>
 
 </html>
