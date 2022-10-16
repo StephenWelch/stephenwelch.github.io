@@ -22,12 +22,14 @@ html * {
 body {
     max-width: 70%;
     margin: auto;
+    /* text-align: center; */
     align-content: center;
     align-items: center;
 }
 
 body > p {
     font-size: 1.2em;
+    margin: auto;
 }
 
 header#titlebar {

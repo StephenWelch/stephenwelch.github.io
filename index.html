@@ -9,46 +9,53 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" type="text/css" rel="stylesheet">
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
     <script>$("#header").load("/header.html")</script>
 </head>
 
 <body>
+    <section class="about">
+        <h3> About Me </h3>
+        <p>
+            I'm a Computer Engineering student at Virginia Tech with a passion for machine learning, robotics, software design, and literature. <br>
+            I work part-time as an ML Engineer for <a href="http://www.shield.ai">Shield AI</a>, helping build AI systems for manuever. <br>
+            In my free time, I work on software and controls for the <a href="http://www.trecvt.org">Terrestrial Robotics and Controls Lab</a>.
+        </p>
+    </section>
 
-    <h3> About Me </h3>
-    <p>
-        I'm currently a third-year Computer Engineering student at Virginia Tech with a passion for machine learning, robotics, software design, and literature. 
-        Currently, I'm interning at <a href="http://www.shield.ai">Heron Systems</a> helping build AI systems for manuever.
-        In my free time, I work on <a href="/projects.html">personal projects</a> and on controls for the <a href="http://www.trecvt.org">Terrestrial Robotics and Controls Lab</a>.
-    </p>
 
-    <p>
-        I previously attended Battlefield High School as part of the IT Speciality Program. 
-        During my time there, I participated in <a href="https://www.firstinspires.org/robotics/frc">FRC Robotics</a> with Team 1885, <a href="https://ilite.us">ILITE Robotics</a> and in the <a href="https://www.uscyberpatriot.org/">CyberPatriot</a> program.            
-    </p>
-    <h3> Tools I've Used a Lot </h3>
-    <ul>
-        <li> Java 8 </li>
-        <li> Kotlin </li>
-        <li> Python </li>
-        <li> JavaFX </li>
-        <li> Git </li>
-    </ul>
-    <h3> Tools I've Used a Bit </h3>
-    <ul>
-        <li> HTML & CSS </li>
-        <li> JavaScript </li>
-        <li> Linux </li>
-        <li> C++ </li>
-    </ul>
-    <h3> Tools I Use Once In a While </h3>
-    <ul>
-        <li> GNUPlot </li>
-        <li> Haskell </li>
-        <li> C# </li>
-        <li> Arduino C</li>
-    </ul>
+    <section class="projects">
+        <div class="row">
+            <div class="project">
+                <title>Air Combat Evolution </title>
+                <img src="media/DARPA ACE.webp">
+            </div>
+            <div class="project">
+                <title>Golden Horde</title>
+                <img src="media/networked-weapons.webp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="project">
+                <title>PANDORA Humanoid Robot</title>
+                <img src="media/PANDORA.png">
+            </div>
+            <div class="project">
+                <title>Miniature Robot Arm</title>
+                <img src="media/mini-arm-all.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="project">
+                <title>FIRST Robotics Competition</title>
+                <img src="media/frc-2019.jpg"
+            </div>
+        </div>
+        
+    </section>
+
 
 </body>
 
