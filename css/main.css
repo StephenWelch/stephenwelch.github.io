@@ -65,11 +65,11 @@ section {
 }
 
 .about {
-    width: 70%;
+    width: 75%;
 }
 
 .projects {
-    width: 100%;
+    width: 75%;
 
     /* see: https://stackoverflow.com/questions/52417889/setting-minimum-and-maximum-number-of-columns-using-css-grid */
     display: grid;
@@ -77,13 +77,16 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(min((100%/var(--min-cols) - var(--grid-column-gap)*(var(--min-cols) - 1)/var(--min-cols)), max(var(--cols-min-width), (100%/var(--max-cols) - var(--grid-column-gap)*(var(--max-cols) - 1)/var(--max-cols)))), 1fr));
 }
 
-.project {
-    background: transparent url('/media/transparent.png') repeat center top;
-}
-
 .project:hover {
     transition-duration: 0.5s;
     transform: scale(1.2);
+    z-index: 1; /* bring to front every time we hover, otherwise z-ordering gets weird */
+}
+
+.project {
+    transition-duration: 0.5s;
+    transform: scale(1.0);
+    background: transparent url('/media/transparent.png') repeat center top;
 }
 
 .project img {
