@@ -94,7 +94,7 @@ section {
     height: auto;
 }
 
-.project title {
+.project h1 {
     text-align: center;
     display: block;
     font-size: 1.17em;
