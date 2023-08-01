@@ -100,6 +100,23 @@ section {
     font-size: 1.17em;
     font-weight: bold;
 }
+
+.publication {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1em;  /* Adds some spacing between each publication */
+}
+
+.publication h1 {
+    margin: 0;
+}
+
+.publication h2 {
+    margin: 0;
+    font-style: italic;
+}
+
 /* body > p {
     font-size: 1.2em;
     margin: auto;
