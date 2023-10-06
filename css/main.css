@@ -77,11 +77,11 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(min((100%/var(--min-cols) - var(--grid-column-gap)*(var(--min-cols) - 1)/var(--min-cols)), max(var(--cols-min-width), (100%/var(--max-cols) - var(--grid-column-gap)*(var(--max-cols) - 1)/var(--max-cols)))), 1fr));
 }
 
-.project:hover {
+/* .project:hover {
     transition-duration: 0.5s;
     transform: scale(1.2);
-    z-index: 1; /* bring to front every time we hover, otherwise z-ordering gets weird */
-}
+    z-index: 1; 
+} */
 
 .project {
     transition-duration: 0.5s;
@@ -89,7 +89,7 @@ section {
     background: transparent url('/media/transparent.png') repeat center top;
 }
 
-.project img {
+.project img, video {
     width: 100%;
     height: auto;
 }
