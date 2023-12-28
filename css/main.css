@@ -94,6 +94,12 @@ section {
     height: auto;
 }
 
+.project iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
 .project h1 {
     text-align: center;
     display: block;
