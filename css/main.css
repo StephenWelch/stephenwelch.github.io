@@ -107,13 +107,19 @@ section {
     font-weight: bold;
 }
 
-.project details {
+/* .project details {
     text-align: center;
-}
+} */
 
-.project summary {
+/* .project details ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+} */
+
+.project details summary {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     font-size: 1.17em;
     font-weight: bold;
@@ -132,11 +138,34 @@ section {
 .project details span {
     font-size: 1.17rem;
     transition: all 0.3s;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
+}
+
+.project details[open] {
+    margin-block-end: 0.83em;
 }
 
 .project details[open] span {
     transform: rotate(90deg);
+}
+
+.project details .detail {
+    display: flex;
+    /* align-items: center; */
+}
+
+.project details .title {
+    font-weight: bold;
+    /* min-width: 3.5em; */
+    margin-right: 0.3em;
+}
+
+.project details label.title::after {
+    content: ":";
+}
+
+.project details .desc {
+    flex: 1;
 }
 
 /* body > p {
