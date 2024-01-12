@@ -65,11 +65,11 @@ section {
 }
 
 .about {
-    width: 75%;
+    width: 80%;
 }
 
 .projects {
-    width: 75%;
+    width: 80%;
 
     /* see: https://stackoverflow.com/questions/52417889/setting-minimum-and-maximum-number-of-columns-using-css-grid */
     display: grid;
@@ -140,7 +140,7 @@ section {
 }
 
 .project details > summary > span {
-    font-size: 1.17rem;
+    font-size: 0.7em;
     transition: all 0.3s;
     margin-right: 0.3em;
     margin-bottom: 0.2em;
