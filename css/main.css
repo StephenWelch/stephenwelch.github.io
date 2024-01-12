@@ -165,6 +165,7 @@ section {
     align-items: center;
     display: flex;
     width: auto;
+    margin-bottom: 0.83em;
  }
 
 .project details .banner .where,.when {
@@ -175,8 +176,8 @@ section {
     font-style: italic;
     margin-left: 0.25em;
     margin-right: 0.25em;
-    /* margin-bottom: 0.83em; */
-}    
+} 
+
 .project details .with {
     font-size: 0.8em;
     background-color: black;
