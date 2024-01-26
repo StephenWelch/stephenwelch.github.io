@@ -9,8 +9,10 @@
     
     <link href="css/main.css" type: "text/css" rel="stylesheet">
     <link href="css/projects.css" type: "text/css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
     <script>$("#header").load("/header.html")</script>
 </head>
 
@@ -41,7 +43,8 @@
                     <span class="content">Autonomous air-to-air combat using reinforcement learning</span>
                 </div>
             </details>
-            <iframe height="400" src="https://www.youtube.com/embed/TfcWNZO-DBk?si=hE6jeo-vk4Sv0usE" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <lite-youtube videoid="TfcWNZO-DBk" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube>
+            <!-- <iframe height="400" src="https://www.youtube.com/embed/TfcWNZO-DBk?si=hE6jeo-vk4Sv0usE" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </a>
         <a class="project">
             <details>
