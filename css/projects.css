@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(min((100%/var(--min-cols) - var(--grid-column-gap)*(var(--min-cols) - 1)/var(--min-cols)), max(var(--cols-min-width), (100%/var(--max-cols) - var(--grid-column-gap)*(var(--max-cols) - 1)/var(--max-cols)))), 1fr));
 }
 
-.project img, video, iframe {
+.project img, lite-youtube {
     width: 100%;
     height: auto;
     margin-top: 0.83em;
