@@ -73,7 +73,7 @@
 
  .project details .banner .where,
  .project details .banner .when {
-    font-size: 1em;
+    font-size: 0.9em;
     display: flex;
     width: fit-content;
     font-weight: bold;

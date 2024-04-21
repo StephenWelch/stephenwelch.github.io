@@ -95,6 +95,12 @@ header#titlebar nav a {
     transition-duration: 0.5s;
 }
 
+header#titlebar nav a {
+    display: inline-block;
+    height: 1em;
+    width: max-content;
+}
+
 header#titlebar nav a:hover {
     font-size: 1.4em;
 }
