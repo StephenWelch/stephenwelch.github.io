@@ -1,0 +1,9 @@
+.publications {
+    margin: auto;
+    text-align: center;
+}
+
+.publication h2 {
+    font-size: 1em;
+    font-style: italic;
+}

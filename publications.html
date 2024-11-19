@@ -9,31 +9,63 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
     <link href="css/main.css" type: "text/css" rel="stylesheet">
-
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script>$("#header").load("/header.html")</script>
+    <link href="css/publications.css" type: "text/css" rel="stylesheet">
 </head>
+
+<header id="titlebar">
+    <div id="titlebar_container">
+        <h1> Stephen Welch </h1>
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="publications.html"> Publications </a>
+            <!-- <a href="projects.html"> Projects </a> -->
+            <a href="resume.html"> Resume </a>
+            <a href="contact_me.html"> Contact Me</a>
+        </nav>
+    </div>
+</header>
 
 <body>
     <section class="publications">
         <a class="publication">
+            <h1>PANDORA: The Open-Source, Structurally Elastic Humanoid Robot</h1>
+            <h2>Humanoids 2024</h2>
+            <a href="https://arxiv.org/abs/2407.18558">ArXiv</a>
+            <summary>
+                PANDORA uses linear series-elastic actuators placed in series and parallel configurations, 
+                with pairs of actuators controlled by a single motor controller. 
+                I designed the high-level controls code to allow control of the robot at the motor controller level (useful for testing),
+                the actuator level (also useful for testing),
+                and the pin joint level (used for whole body control).
+                 I also contributed other small bits, such as test routines for task-space control and a driver for our IMU.
+            </summary>
+        </a>
+        <a class="publication">
             <h1>Real‑World Deep Reinforcement Learning for Position Tracking of a Pendulum Driven by a SEA</h1>
             <h2>IMECE 2023</h2>
+            <summary>
+                I helped develop an interface between RLLib and our motor controllers, built tooling, and helped build the RL setup for the task.
+            </summary>
             <!-- <img src="media/DARPA ACE.webp"> -->
         </a>
         <a class="publication">
             <h1>Real‑Time Model‑Free Deep Reinforcement Learning for Force Control of a Series Elastic Actuator</h1>
             <h2>IROS 2023</h2>
+            <summary>
+                This publication reused the setup I helped build in the above publication. I also collected all of the data for this paper.
+            </summary>
             <!-- <img src="media/networked-weapons.webp"> -->
         </a>
         <a class="publication">
             <h1>A Mapping Approach to Achieve Torque Control for Parallel‑Actuated Robotic Systems</h1>
             <h2>IMECE 2022</h2>
+            <summary>
+                I implemented the Jacobian transforms that allow our force-controlled linear actuators (placed in series and parallel configurations)
+                to be controlled via torque commands from a whole-body controller.
+            </summary>
             <!-- <img src="media/PANDORA.png"> -->
         </a>
     </section>
-
-
 </body>
 
 <div id="footer"></div>
