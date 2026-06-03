@@ -1,31 +1,5 @@
-
-@keyframes fadeout {
-    0% {
-        opacity: 100;
-    }
-
-    45% {
-        opacity: 50;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-
-    45% {
-        opacity: 50;
-    }
-
-    100% {
-        opacity: 100;
-    }
-}
+/* @import must precede all other rules to be honored by browsers */
+@import url('https://rsms.me/inter/inter.css');
 
 :root {
     --foreground-color: black;
@@ -37,7 +11,6 @@
     --grid-column-gap: 1em;
 }
 
-@import url('https://rsms.me/inter/inter.css');
 html {
     font-family: 'Inter', sans-serif;
 }
@@ -48,14 +21,13 @@ html * {
 }
 
 @supports (font-variation-settings: normal) {
-    html { 
-        font-family: 'Inter var', sans-serif; 
+    html {
+        font-family: 'Inter var', sans-serif;
     }
 }
 
 body {
-    max-width: 70%;
-    min-width: 375px;
+    width: min(90%, 1000px);
     margin: auto;
 }
 
@@ -66,12 +38,8 @@ section {
 
 .about {
     width: 80%;
+    margin-bottom: 3em;
 }
-
-/* body > p {
-    font-size: 1.2em;
-    margin: auto;
-} */
 
 header#titlebar {
     text-align: center;
@@ -79,7 +47,8 @@ header#titlebar {
 }
 
 header#titlebar h1 {
-    font-size: 4.5em;
+    /* scales down on narrow screens so the name stays on one line */
+    font-size: clamp(2.25rem, 11vw, 4.5em);
     display: inline-block;
     padding-right: 1%;
 }
@@ -103,14 +72,15 @@ header#titlebar nav a:active {
     transform: scale(1.17);
 }
 
+header#titlebar nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+.resume-download {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 footer {
     margin-top: 5%;
-}
-
-* button {
-    display: contents;
-}
-
-* button:hover {
-    text-decoration: underline;
 }

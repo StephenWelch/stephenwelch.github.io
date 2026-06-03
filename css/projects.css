@@ -35,8 +35,10 @@
     cursor: pointer;
     user-select: none;
 
-    transition-property: font-size; /* Only animate font size */
+    /* scale instead of font-size so hovering doesn't reflow neighboring cards */
+    transition-property: transform;
     transition-duration: 0.5s;
+    transform-origin: center center;
 }
 
 .project summary::-webkit-details-marker {
@@ -44,7 +46,7 @@
 }
 
 .project summary:hover {
-    font-size: 1.25em;
+    transform: scale(1.07);
 }
 
 .project details > summary > span {
