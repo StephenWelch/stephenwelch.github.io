@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Stephen Welch, Machine Learning & Robotics Research, Portfolio">
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Stephen Welch">
+    <meta property="og:description" content="Software engineer working on machine learning & robotics. Portfolio and projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stephenwel.ch/">
+    <meta property="og:image" content="https://stephenwel.ch/media/alpha.jpg">
+
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link href="css/projects.css" type="text/css" rel="stylesheet">
 
@@ -14,38 +22,35 @@
     <title>Stephen Welch</title>
 </head>
 
-<header id="titlebar">
-    <div id="titlebar_container">
-        <h1> Stephen Welch </h1>
-        <nav>
-            <a href="index.html"> Home </a>
-            <!-- <a href="projects.html"> Projects </a> -->
-            <a href="resume.html"> Resume </a>
-            <a href="contact_me.html"> Contact Me</a>
-        </nav>
-    </div>
-</header>
-
 <body>
+    <header id="titlebar">
+        <div id="titlebar_container">
+            <h1> Stephen Welch </h1>
+            <nav>
+                <a href="index.html" aria-current="page"> Home </a>
+                <!-- <a href="projects.html"> Projects </a> -->
+                <a href="resume.html"> Resume </a>
+                <a href="contact_me.html"> Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
     <section class="about">
-        <h3> About Me </h3>
+        <h2> About Me </h2>
         <p>
-            I'm a software engineer at <a href="http://apptronik.com">Apptronik</a>, where I deploy reinforcement learning on humanoid robots.<br>
+            I'm a software engineer at <a href="https://apptronik.com">Apptronik</a>, where I deploy reinforcement learning on humanoid robots.<br>
             Previously, I received an MS in Electrical Engineering from Virginia Tech, where I studied the intersection of control theory and deep reinforcement
-            learning at the <a href="http://www.trecvt.org">Terrestrial Robotics and Controls Lab</a>.<br>
-            Before that, I interned at <a href="http://www.shield.ai">Shield AI</a>, where I built RL systems to control and coordinate things that fly. 
+            learning at the <a href="https://www.trecvt.org">Terrestrial Robotics and Controls Lab</a>.<br>
+            Before that, I interned at <a href="https://www.shield.ai">Shield AI</a>, where I built RL systems to control and coordinate things that fly.
             <br>
             For my undergraduate studies, I majored in <a
                 href="https://catalog.vt.edu/undergraduate/college-engineering/electrical-computer-engineering/computer-engineering-bs-controls-robotics-autonomy/">Controls,
-                Robotics & Autonomy</a> with a degree in Computer Engineering.</a>
+                Robotics & Autonomy</a> with a degree in Computer Engineering.
         </p>
     </section>
 
-    <br>
-    <br>
-
     <section class="projects">
-        <a class="project">
+        <article class="project">
             <details open>
                 <summary><span>▶</span>Apollo Humanoid Robot</summary>
                 <div class="banner">
@@ -58,10 +63,10 @@
                     <span class="content">Deploying reinforcement learning on humanoid robots</span>
                 </div>
             </details>
-            <img src="media/alpha.jpg">
+            <img src="media/alpha.jpg" alt="Apollo humanoid robot">
             <!-- <lite-youtube videoid="TfcWNZO-DBk" playlabel="YouTube video player"></lite-youtube> -->
-        </a>
-        <a class="project">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>Air Combat Evolution</summary>
                 <div class="banner">
@@ -75,8 +80,8 @@
                 </div>
             </details>
             <lite-youtube videoid="TfcWNZO-DBk" playlabel="YouTube video player"></lite-youtube>
-        </a>
-        <a class="project">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>Golden Horde</summary>
                 <div class="banner">
@@ -91,8 +96,8 @@
                 </div>
             </details>
             <lite-youtube videoid="br3dLXBtE1Y" playlabel="YouTube video player"></lite-youtube>
-        </a>
-        <a class="project">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>PANDORA</summary>
                 <div class="banner">
@@ -105,9 +110,9 @@
                     <span class="content">A 6ft-tall 3D-printed humanoid robot designed and built in-house</span>
                 </div>
             </details>
-            <img src="media/PANDORA.png">
-        </a>
-        <a class="project">
+            <img src="media/PANDORA.png" alt="PANDORA humanoid robot">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>Deep RL for Force Control</summary>
                 <div class="banner">
@@ -122,8 +127,8 @@
                 </div>
             </details>
             <lite-youtube videoid="k3kY9JTnmRk" playlabel="YouTube video player"></lite-youtube>
-        </a>
-        <a class="project">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>Miniature Robot Arm</summary>
                 <div class="banner">
@@ -137,8 +142,8 @@
                 </div>
             </details>
             <img src="media/mini-arm-all.png" alt="A small 3D-printed robot arm">
-        </a>
-        <a class="project">
+        </article>
+        <article class="project">
             <details open>
                 <summary><span>▶</span>FIRST Robotics Competition</summary>
                 <div class="banner">
@@ -152,7 +157,7 @@
                 </div>
             </details>
             <img src="media/frc-2019.jpg" alt="A FIRST Robotics competition robot">
-        </a>
+        </article>
     </section>
 
 
