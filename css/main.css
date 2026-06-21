@@ -13,6 +13,9 @@
 
 html {
     font-family: 'Inter', sans-serif;
+    /* always reserve scrollbar space so centered content doesn't shift
+       between scrolling (Home/Resume) and non-scrolling (Contact) pages */
+    scrollbar-gutter: stable;
 }
 
 html * {
