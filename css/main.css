@@ -13,6 +13,9 @@
 
 html {
     font-family: 'Inter', sans-serif;
+    /* always reserve scrollbar space so centered content doesn't shift
+       between scrolling (Home/Resume) and non-scrolling (Contact) pages */
+    scrollbar-gutter: stable;
 }
 
 html * {
@@ -44,17 +47,24 @@ section {
 header#titlebar {
     text-align: center;
     margin-bottom: 5%;
+    --title-font: clamp(2.25rem, 11vw, 4.5em);
+}
+
+header#titlebar #titlebar_container {
+    /* title and nav share a common baseline (not vertically centered) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 0.6em;
 }
 
 header#titlebar h1 {
     /* scales down on narrow screens so the name stays on one line */
-    font-size: clamp(2.25rem, 11vw, 4.5em);
-    display: inline-block;
+    font-size: var(--title-font);
+    margin: 0;
     padding-right: 1%;
-}
-
-header#titlebar nav {
-    display: inline-block;
+    white-space: nowrap;
 }
 
 header#titlebar nav a {
@@ -74,6 +84,43 @@ header#titlebar nav a:active {
 
 header#titlebar nav a[aria-current="page"] {
     font-weight: bold;
+}
+
+header#titlebar .brand {
+    /* expose the title's baseline to the row, with icons centered beside it */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    align-self: baseline;
+}
+
+header#titlebar .social {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    /* size icons relative to the title so the stack fits within its height */
+    font-size: var(--title-font);
+    gap: 0.05em;
+}
+
+header#titlebar a.icon {
+    display: inline-flex;
+    margin: 0;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+header#titlebar a.icon:hover,
+header#titlebar a.icon:active {
+    transform: scale(1.17);
+}
+
+header#titlebar a.icon svg {
+    /* three icons + two gaps ≈ 0.7em ≈ cap height of the title */
+    width: 0.2em;
+    height: 0.2em;
+    display: block;
 }
 
 .resume-download {
